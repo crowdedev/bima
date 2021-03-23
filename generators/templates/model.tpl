@@ -5,7 +5,7 @@ import (
 )
 
 type {{.Module}} struct {
-	*bima.Model
+	bima.Model
 {{range .Columns}}
     {{.Name}} {{.GolangType}}
 {{end}}

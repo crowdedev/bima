@@ -661,8 +661,8 @@ var Container = []dingo.Def{
 	},
 	{
 		Name: "bima:model",
-		Build: func() (*bima.Model, error) {
-			return &bima.Model{Base: configs.Base{}}, nil
+		Build: func() (bima.Model, error) {
+			return bima.Model{Base: configs.Base{}}, nil
 		},
 	},
 	{
